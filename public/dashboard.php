@@ -2,14 +2,24 @@
 session_start();
 
 if (!isset($_SESSION['user'])) {
-    header("Location: index.php");
+    header('Location: index.php');
     exit;
 }
 ?>
 
-<link rel="stylesheet" href="assets/css/style.css">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
 
 <div class="container">
-    <h1>Bem-vindo à área restrita</h1>
+    <h1>Área Restrita</h1>
+    <p>Bem-vindo, <?= $_SESSION['user'] ?></p>
     <a href="logout.php">Sair</a>
 </div>
+
+</body>
+</html>
