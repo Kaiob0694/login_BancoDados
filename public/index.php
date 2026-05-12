@@ -1,33 +1,29 @@
-<?php
-session_start();
+<?php session_start(); ?>
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $user = $_POST['user'] ?? '';
-    $pass = $_POST['pass'] ?? '';
+<!DOCTYPE html>
+<html>
 
-    if ($user === 'admin' && $pass === '123') {
-        session_regenerate_id(true);
-        $_SESSION['user'] = 'admin';
-        header('Location: dashboard.php');
-        exit;
-    } else {
-        $erro = "Você não tem acesso";
-    }
-}
-?>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
 
-<link rel="stylesheet" href="assets/css/style.css">
+<body>
 
-<div class="container">
-    <h1>Login</h1>
+    <div class="container">
+        <h1>Login</h1>
 
-    <form action="../src/auth.php" method="post">
-        <input type="email" name="email" placeholder="Digite seu E-mail" required>
-        <input type="password" name="senha" placeholder="Digite sua Senha" required>
-        <button type="submit">Entar</button>
-    </form>
+        <form action="../src/auth.php" method="POST">
+            <input type="email" name="email" placeholder="Digite seu email" required>
+            <input type="password" name="senha" placeholder="Digite sua senha" required>
+            <button type="submit">Entrar</button>
+        </form>
 
-    <?php if (!empty($erro)): ?>
-        <p class="erro"><?= $erro ?></p>
-    <?php endif; ?>
-</div>
+        <a href="cadastro.php">
+            <button>Cadastrar</button>
+        </a>
+    </div>
+
+</body>
+
+</html>
