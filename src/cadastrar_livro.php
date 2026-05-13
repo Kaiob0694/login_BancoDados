@@ -10,7 +10,7 @@ $sql = "INSERT INTO livros (titulo, autor, isbn, ano)
         VALUES ('$titulo', '$autor', '$isbn', '$ano')";
 
 if (mysqli_query($conexao, $sql)) {
-    header("Location: ../public/index.php");
+    header("Location: ../public/dashboard.php");
     exit;
 } else {
     echo "Erro ao cadastrar usuário";
