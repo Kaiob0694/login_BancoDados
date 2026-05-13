@@ -20,7 +20,7 @@
         </form>
 
         <a href="cadastro.php">
-            <button>Cadastrar</button>
+            <button>Cadastrar novo usuário</button>
         </a>
     </div>
 
