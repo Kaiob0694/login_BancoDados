@@ -1,140 +1,148 @@
+/* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  
 }
 
+/* Tela */
 body {
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 100vh;
+  display: flex;
 }
 
-/* Container */
+/* Lado esquerdo */
+.left {
+  width: 50%;
+  overflow: hidden;
+}
+
+/* Imagem esquerda */
+.left img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* Lado direito */
+.right {
+  width: 50%;
+  background: #242424;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Caixa login */
 .container {
-    background: #fff;
-    padding: 30px;
-    border-radius: 12px;
-    width: 300px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-    text-align: center;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Título */
 h1 {
-    margin-bottom: 20px;
-    color: #333;
+  text-align: center;
+  font-weight: 200;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 /* Inputs */
 input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    outline: none;
-    transition: 0.3s;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+
+  border: 1px solid #ccc;
+  border-radius: 8px;
+
+  outline: none;
+  transition: 0.3s;
 }
 
 input:focus {
-    border-color: #667eea;
+  border-color: #ffffff;
 }
 
 /* Botão */
 button {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 8px;
-    background: #667eea;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
+  width: 100%;
+  padding: 12px;
+
+  border: solid 1px white;
+  border-radius: 8px;
+
+  background: rgba(255, 255, 255, 0);
+  color: white;
+
+  font-size: 16px;
+  font-weight: 200;
+
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 button:hover {
-    background: #5a67d8;
+  background: #00000052;
+}
+
+.btn-cadastro {
+  width: 100%;
+  padding: 12px;
+
+  border: solid 1px white;
+  border-radius: 8px;
+
+  background: rgba(255, 255, 255, 0);
+  color: white;
+
+  font-size: 16px;
+  font-weight: 200;
+
+  cursor: pointer;
+  transition: 0.3s;
+
+  text-align: center;
+  text-decoration: none;
+
+  display: block;
+  margin-top: 15px;
+}
+
+.btn-cadastro:hover {
+  background: #00000052;
+  text-decoration: none;
 }
 
 /* Link */
 a {
-    display: inline-block;
-    margin-top: 15px;
-    color: #667eea;
-    text-decoration: none;
+  display: block;
+  margin-top: 15px;
+
+  text-align: center;
+
+  color: #e6e2e0;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-/* Mensagem de erro */
-.erro {
-    color: red;
-    margin-top: 10px;
-}
-
-/* Layout do dashboard */
-.dashboard {
-    width: 100%;
-    max-width: 900px;
-}
-
-/* Topo */
-.navbar {
-    background: #667eea;
-    color: white;
-    padding: 15px 20px;
-    border-radius: 12px 12px 0 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Conteúdo */
-.content {
-    background: #fff;
-    padding: 30px;
-    border-radius: 0 0 12px 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-}
-
-/* Cards */
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.card {
-    background: #f5f7ff;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    background: #e0e7ff;
-}
-
-/* Botão sair */
-.logout {
-    background: #ff4d4d;
-    padding: 8px 15px;
-    border-radius: 6px;
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.logout:hover {
-    background: #e60000;
+.logo {
+  padding-bottom: 50px;  
+  width: 320px;
+  margin-bottom: 20px;
 }

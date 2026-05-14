@@ -101,7 +101,7 @@ function e($valor)
 
                         <td class="acoes">
 
-                            <a class="btn btn-primary" href="update.php?id=<?php echo $l['id']; ?>">
+                            <a class="btn btn-primary" href="editar_livro.php?id=<?php echo $l['id']; ?>">
                                 Editar
                             </a>
 

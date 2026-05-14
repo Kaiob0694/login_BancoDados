@@ -8,7 +8,7 @@
 body {
   background-color: #f4f6f8;
   padding: 30px;
-  color: #2c3e50;
+  color: #000000;
 }
  
 .container {
@@ -43,12 +43,12 @@ h1 {
 }
  
 .btn-primary {
-  background: #2d6cdf;
+  background: #6b3e26;
   color: #fff;
 }
  
 .btn-primary:hover {
-  background: #2459b8;
+  background: #4e2d1c;
 }
  
 .card {
@@ -102,7 +102,7 @@ th {
   letter-spacing: 0.3px;
   text-transform: uppercase;
   background: #ecf2ff;
-  color: #2d6cdf;
+  color: #000000;
   padding: 12px;
 }
  

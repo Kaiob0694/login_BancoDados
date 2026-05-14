@@ -5,7 +5,7 @@ require "../src/conexao.php";
 
 $id = $_SESSION['user_id'];
 
-$sql = "SELECT * FROM usuarios WHERE id = $id";
+$sql = "SELECT * FROM usuario WHERE id = $id";
 $result = mysqli_query($conexao, $sql);
 $user = mysqli_fetch_assoc($result);
 ?>
