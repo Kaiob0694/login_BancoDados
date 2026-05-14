@@ -105,7 +105,7 @@ function e($valor)
                                 Editar
                             </a>
 
-                            <form method="POST" action="delete.php" style="display:inline;">
+                            <form method="POST" action="../src/excluir.php" style="display:inline;">
 
                                 <input type="hidden" name="id" value="<?php echo $l['id']; ?>">
 

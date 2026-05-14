@@ -4,7 +4,7 @@ ini_set('display_errors', 1);
 
 $host = "localhost";
 $usuario = "root";
-$senha = "12345";
+$senha = "1234";
 $banco = "sistema_login";
 
 $conexao = mysqli_connect($host, $usuario,$senha, $banco);
